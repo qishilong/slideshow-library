@@ -1,0 +1,85 @@
+.banner {
+    width: 564px;
+    height: 315px;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.banner .images a {
+    float: left;
+}
+
+.banner .images img {
+    display: block;
+    width: 564px;
+    height: 315px;
+    border-radius: 12px;
+}
+
+.banner .dots {
+    position: absolute;
+    bottom: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 1px 2px;
+}
+
+.banner .dots span {
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin: 3px;
+    background-color: #fff;
+    border-radius: 50%;
+    float: left;
+    cursor: pointer;
+}
+
+.banner .dots .active {
+    background-color: #f40;
+}
+
+.banner .arrow {
+    display: none;
+}
+
+.banner:hover .arrow {
+    display: block;
+}
+
+.banner .arrow .item {
+    transition: all 0.4s ease-in;
+    display: block;
+    width: 20px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    position: absolute;
+    top: calc(50% - 15px);
+    font-size: 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.banner .arrow .item:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.banner .arrow .right {
+    right: 0;
+    padding-left: 2px;
+    border-radius: 20px 0 0 20px;
+}
+
+.banner .arrow .left {
+    left: 0;
+    padding-right: 2px;
+    border-radius: 0 20px 20px 0;
+}
